@@ -1,7 +1,9 @@
-function MakeCard() {
+export default function MakeCard() {
+
+    let injectHere = document.getElementById('injectHere');
 
     let card = document.createElement('div');
-    card.className = 'card';
+    card.className = 'card mb-3';
 
     let card_body = document.createElement('div');
     card_body.className = 'card-body';
@@ -16,5 +18,12 @@ function MakeCard() {
 
     let i = document.createElement('i');
     i.className = 'far fa-trash-alt fa-2x d-flex justify-content-center';
-    
+
+    injectHere.appendChild(card);
+    card.appendChild(card_body);
+    card_body.appendChild(h5);
+    card_body.appendChild(p);
+    card_body.appendChild(i);
+
+
 }
