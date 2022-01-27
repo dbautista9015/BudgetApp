@@ -47,6 +47,11 @@ addExpenseBtn.addEventListener('click', e => {
 
 });
 
+for (let index = 0; index < cards.length; index++) {
+    console.log("Index: " + index);
+    
+}
+
 
 
 
