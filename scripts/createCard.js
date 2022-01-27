@@ -1,4 +1,4 @@
-export default function MakeCard() {
+export default function MakeCard(obj) {
 
     let injectHere = document.getElementById('injectHere');
 
@@ -11,10 +11,12 @@ export default function MakeCard() {
     let h5 = document.createElement('h5');
     h5.className = 'card-title d-flex justify-content-center';
     //Later need the name of the expense from field or local depends
+    h5.textContent = obj.expenseName;
 
     let p = document.createElement('p');
     p.className = 'card-text d-flex justify-content-center';
     //Later need the amount of expense from field or local depends
+    p.textContent = '$' + obj.expenseAmount;
 
     let i = document.createElement('i');
     i.className = 'far fa-trash-alt fa-2x d-flex justify-content-center';

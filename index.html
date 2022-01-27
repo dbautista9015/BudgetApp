@@ -34,8 +34,8 @@
 
           <!--Expense Input Field-->
           <div class="form-outline">
-            <input type="number" id="typeNumber" class="form-control" min="0" />
-            <label class="form-label" for="typeNumber">Budget Amount</label>
+            <input type="number" id="budgetAmountInput" class="form-control" min="0" />
+            <label class="form-label" for="budgetAmount">Budget Amount</label>
           </div>
           <!--End Expense Input Field-->
         </div>
@@ -44,7 +44,7 @@
         <!--col-12-->
         <div class="col-12 mt-5">
           <div class="form-outline">
-            <input type="text" id="typeText" class="form-control"/>
+            <input type="text" id="nameOfExpenseInput" class="form-control"/>
             <label class="form-label" for="typeText">Name of Expense</label>
           </div>
         </div>
@@ -53,15 +53,15 @@
         <!--col-12-->
         <div class="col-12 mt-5">
           <div class="form-outline">
-            <input type="number" id="typeNumber2" class="form-control" min="0"/>
-            <label class="form-label" for="typeNumber2">Budget Amount</label>
+            <input type="number" id="expenseAmountInput" class="form-control" min="0"/>
+            <label class="form-label" for="expenseAmountInput">Expense Amount</label>
           </div>
         </div>
         <!--End col-12-->
 
         <!--col-12-->
         <div class="col-12 d-flex justify-content-center mt-5">
-          <button type="button" class="btn btn-success btn-rounded">Add Expense</button>
+          <button type="button" class="btn btn-success btn-rounded" id="addExpenseBtn">Add Expense</button>
         </div>
       </div>
       <!--End col-12-->
@@ -80,24 +80,8 @@
 
         <!--col-12 card (inject card)-->
         <div class="col-12" id="injectHere">
-
-          <!-- <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-center">Starbucks</h5>
-              <p class="card-text d-flex justify-content-center">$300.00</p>
-              <i class="far fa-trash-alt fa-2x d-flex justify-content-center"></i>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-center">Starbucks</h5>
-              <p class="card-text d-flex justify-content-center">$300.00</p>
-              <i class="far fa-trash-alt fa-2x d-flex justify-content-center"></i>
-            </div>
-          </div>
-        </div> -->
-        <!--End col-12 card-->
+          
+        </div>
       </div>
     </div>
     <!--End Expenses container-->
