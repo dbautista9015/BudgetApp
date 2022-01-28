@@ -21,6 +21,12 @@ export default function MakeCard(obj) {
     let i = document.createElement('i');
     i.className = 'far fa-trash-alt fa-2x d-flex justify-content-center';
 
+    //When trash can is clicked, remove
+    i.addEventListener('click', e => {
+        card.remove();
+        //Delete from local storage
+    })
+
     injectHere.appendChild(card);
     card.appendChild(card_body);
     card_body.appendChild(h5);
